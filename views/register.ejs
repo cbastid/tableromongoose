@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la Manada</title>
+</head>
+<body>
+    <h1>ingresa tu animal para la Manada!</h1>
+    <form action="/register" method="post" >
+        <label for="animalName">Nombre: </label>
+        <input type="text" name="animalName">
+
+        <label for="animalRace">Tipo de Animal: </label>
+        <input type="text" name="animalRace">
+
+        <label for="animalAge">Edad: </label>
+        <input type="text" name="animalAge">
+
+        <button>insert!</button>
+    </form>
+    <h3><%= mensaje %></h3>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body>
+    <h1>Actualiza tu animal de la Manada!</h1>
+    <form action="/editar/<%= infoAnimales._id %>" method="post" >
+        <label for="animalName">Nombre: </label>
+        <input type="text" name="animalName" value="<%= infoAnimales.animalName %>">
+
+        <label for="animalRace">Tipo de Animal: </label>
+        <input type="text" name="animalRace" value="<%= infoAnimales.animalRace %>">
+
+        <label for="animalAge">Edad: </label>
+        <input type="text" name="animalAge" value="<%= infoAnimales.animalAge %>">
+
+        <button>Update!</button>
+    </form>
+</body>
+</html>

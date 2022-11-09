@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.veiwAnimal {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
